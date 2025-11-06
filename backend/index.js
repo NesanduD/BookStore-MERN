@@ -1,8 +1,8 @@
 import express from "express";
 import {PORT, mongoDBURL} from "./config.js";
+import mongoose from "mongoose";
 const app = express();
 
-import mongoose from "mongoose";
 
 app.get("/", (request,response) => {
         console.log(request)
